@@ -24,7 +24,7 @@ DARK-X is a gamified ethical hacking AI agent platform designed to transform lea
 ### 1. Environment Setup
 ```bash
 # Clone the repository
-git clone <repo_url>
+git clone https://github.com/Darksivatamil/DARK-X.git
 cd dark-x
 
 # Install dependencies
