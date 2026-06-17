@@ -1,0 +1,2 @@
+function renderProgressChart() {}
+function renderPowerChart() {}

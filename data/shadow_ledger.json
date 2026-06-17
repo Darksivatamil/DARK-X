@@ -1,0 +1,12 @@
+{
+    "identities": {
+        "did:darkx:83de86e1b4da478a": {
+            "user_id": 2,
+            "username": "DARKSIVA",
+            "reputation": 100,
+            "guild": null,
+            "contributions": []
+        }
+    },
+    "guilds": {}
+}

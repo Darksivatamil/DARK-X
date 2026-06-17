@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK-X | Shadow Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/animations.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 2L2 8v16l14 6 14-6V8L16 2z" stroke="#7c3aed" stroke-width="2" fill="rgba(124,58,237,0.15)"/>
+                <path d="M16 6l10 4.5v9L16 24 6 19.5v-9L16 6z" fill="rgba(124,58,237,0.3)"/>
+                <circle cx="16" cy="14" r="3" fill="#7c3aed"/>
+            </svg>
+            <span class="logo-text">DARK-X</span>
+            <svg class="menu-toggle" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <nav class="sidebar-nav">
+            <a class="nav-item active" data-tab="dashboard"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Dashboard</a>
+            <a class="nav-item" data-tab="agents"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-7 8-7s8 3 8 7"/></svg> Agents</a>
+            <a class="nav-item" data-tab="tasks"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg> Tasks</a>
+            <a class="nav-item" data-tab="modules"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg> Modules</a>
+            <a class="nav-item" data-tab="stats"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg> Stats</a>
+            <a class="nav-item" data-tab="tutorials"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg> Tutorials</a>
+            <a class="nav-item" data-tab="snippets"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Snippets</a>
+            <a class="nav-item" data-tab="vulns"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Vulns</a>
+            <a class="nav-item" data-tab="powers"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg> Powers</a>
+            <a class="nav-item" data-tab="warroom"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg> War Room</a>
+            <a class="nav-item" data-tab="news"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/><line x1="10" y1="6" x2="18" y2="6"/><line x1="10" y1="10" x2="18" y2="10"/><line x1="10" y1="14" x2="14" y2="14"/></svg> News</a>
+            <a class="nav-item" data-tab="settings"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg> Settings</a>
+        </nav>
+        <div class="sidebar-bottom">
+            <div class="system-status-widget">
+                <div class="status-dot online" id="sys-status-dot"></div>
+                <div>
+                    <div class="status-label">System Status</div>
+                    <div class="status-value" id="sys-status-text">All systems operational</div>
+                </div>
+            </div>
+            <div class="user-profile-widget">
+                <div class="user-avatar" id="sidebar-avatar">S</div>
+                <div class="user-info">
+                    <div class="user-name" id="display-username">Shadow</div>
+                    <div class="user-email" id="display-email">shadow@dark-x.dev</div>
+                    <span class="user-badge" id="display-rank">Shadow Initiate</span>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <button class="logout-btn" id="logout-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Log out
+            </button>
+        </div>
+    </aside>
+
+    <main class="main-area">
+        <header class="top-header">
+            <div class="header-left">
+                <h1 class="page-title" id="page-title">Dashboard</h1>
+                <p class="page-subtitle" id="page-subtitle">Welcome back, <span id="welcome-name">Hunter</span></p>
+            </div>
+            <div class="header-center">
+                <div class="search-bar">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" placeholder="Search agents, tasks, tools..." id="global-search" spellcheck="false">
+                    <kbd>Ctrl+K</kbd>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="icon-btn" id="theme-toggle" title="Toggle Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+                <button class="icon-btn notification-btn" id="notif-btn" title="Notifications"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg><span class="notif-badge" id="notif-count">0</span></button>
+                <div class="header-avatar" id="header-avatar">S</div>
+            </div>
+        </header>
+
+        <div class="content-scroll">
+            <!-- ===== DASHBOARD TAB ===== -->
+            <div class="tab-panel active" id="tab-dashboard">
+                <div class="stats-row" id="stats-row"></div>
+                <div class="main-grid">
+                    <div class="panel agents-panel">
+                        <div class="panel-header"><h2>Your Agents</h2><button class="view-all-btn" data-tab="agents">View all</button></div>
+                        <div id="dashboard-agents" class="agents-grid"></div>
+                    </div>
+                    <div class="panel tasks-panel">
+                        <div class="panel-header"><h2>Daily Tasks</h2><button class="view-all-btn" data-tab="tasks">View all</button></div>
+                        <div class="tasks-list" id="dashboard-tasks"></div>
+                        <div class="streak-bar">
+                            <span>Daily Streak <span class="fire">&#128293;</span></span>
+                            <span class="streak-count" id="streak-count">0 Days</span>
+                        </div>
+                    </div>
+                    <div class="panel news-panel">
+                        <div class="panel-header"><h2>Hacking News</h2><button class="view-all-btn" data-tab="news">View all</button></div>
+                        <div class="news-list" id="dashboard-hacking-news"></div>
+                        <div class="panel-header" style="margin-top:16px;"><h2>Industry News</h2><button class="view-all-btn" data-tab="news">View all</button></div>
+                        <div class="news-list" id="dashboard-industry-news"></div>
+                    </div>
+                </div>
+                <div class="bottom-grid">
+                    <div class="panel power-panel">
+                        <div class="panel-header"><h2>Power Overview</h2><button class="view-all-btn" data-tab="powers">View all</button></div>
+                        <div class="power-content">
+                            <canvas id="powerChart" width="180" height="180"></canvas>
+                            <div class="power-legend" id="power-legend"></div>
+                        </div>
+                    </div>
+                    <div class="panel activity-panel">
+                        <div class="panel-header"><h2>Activity Summary</h2></div>
+                        <div class="activity-badge" id="activity-badge">+0%</div>
+                        <canvas id="activityChart" height="160"></canvas>
+                    </div>
+                    <div class="panel tools-panel">
+                        <div class="panel-header"><h2>Quick Tools</h2><button class="view-all-btn" data-tab="modules">View all</button></div>
+                        <div class="quick-tools-grid" id="quick-tools"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== AGENTS TAB ===== -->
+            <div class="tab-panel" id="tab-agents">
+                <div class="panel" style="margin-bottom:16px;">
+                    <div class="panel-header"><h2>Your Shadow Army</h2></div>
+                    <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:16px;">Click any agent to activate and chat. Type <kbd>/arise</kbd> in the terminal to awaken all.</p>
+                    <div class="agent-full-grid" id="agents-full-grid"></div>
+                </div>
+                <div class="panel" id="agent-chat-panel" style="display:none;">
+                    <div class="panel-header">
+                        <h2>Chat with <span id="chat-agent-name">Agent</span></h2>
+                        <button class="view-all-btn" id="close-chat">Close</button>
+                    </div>
+                    <div class="chat-box" id="chat-box"></div>
+                    <div class="chat-input-row">
+                        <input type="text" id="chat-input" placeholder="Type a message..." spellcheck="false">
+                        <button id="chat-send">Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== TASKS TAB ===== -->
+            <div class="tab-panel" id="tab-tasks">
+                <div class="tasks-board">
+                    <div class="tasks-track"><div class="track-header purple"><span>&#128187;</span> Python <span class="track-count"><span id="track-count-python">0</span>/<span id="track-total-python">1</span></span></div><div class="track-list" id="track-python"></div></div>
+                    <div class="tasks-track"><div class="track-header cyan"><span>&#128736;</span> Kali Linux <span class="track-count"><span id="track-count-kali">0</span>/<span id="track-total-kali">1</span></span></div><div class="track-list" id="track-kali"></div></div>
+                    <div class="tasks-track"><div class="track-header green"><span>&#129302;</span> AI Tricks <span class="track-count"><span id="track-count-ai">0</span>/<span id="track-total-ai">1</span></span></div><div class="track-list" id="track-ai"></div></div>
+                    <div class="tasks-track"><div class="track-header gold"><span>&#127919;</span> Skill Upgrader <span class="track-count"><span id="track-count-skill">0</span>/<span id="track-total-skill">1</span></span></div><div class="track-list" id="track-skill"></div></div>
+                </div>
+                <div class="panel" id="task-detail-panel" style="display:none;margin-top:16px;">
+                    <div class="panel-header"><h2 id="task-detail-title">Task Detail</h2><button class="view-all-btn" id="close-task-detail">Back</button></div>
+                    <div id="task-detail-body"></div>
+                </div>
+            </div>
+
+            <!-- ===== MODULES TAB ===== -->
+            <div class="tab-panel" id="tab-modules">
+                <div class="modules-view-selector">
+                    <button class="modules-view-btn active" data-view="tools">All Tools</button>
+                    <button class="modules-view-btn" data-view="workspace">Active Workspace</button>
+                    <button class="modules-view-btn" data-view="history">Run History</button>
+                </div>
+                <div id="modules-container">
+                    <div class="panel modules-grid-panel" id="modules-tools-view">
+                        <div class="panel-header">
+                            <h2>Security Modules</h2>
+                            <span style="color:var(--text-muted);font-size:0.75rem;" id="module-ai-status">AI: <span id="module-ai-status-text">Checking...</span></span>
+                        </div>
+                        <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:16px;">10 AI-powered security tools at your command. Each tool has customizable options and produces real-time analysis.</p>
+                        <div class="module-grid" id="modules-full-grid"></div>
+                    </div>
+                    <div class="panel" id="modules-workspace-view" style="display:none;">
+                        <div class="panel-header">
+                            <h2 id="workspace-tool-name">Select a Tool</h2>
+                            <div style="display:flex;gap:8px;">
+                                <button class="view-all-btn" id="workspace-run-all" title="Run with current options">▶ Run</button>
+                                <button class="view-all-btn" id="workspace-close">Close</button>
+                            </div>
+                        </div>
+                        <div id="workspace-content">
+                            <div class="workspace-layout">
+                                <div class="workspace-options" id="workspace-options">
+                                    <div class="empty-state">Select a tool from the grid to configure it.</div>
+                                </div>
+                                <div class="workspace-output">
+                                    <div class="workspace-output-header">
+                                        <span>Terminal Output</span>
+                                        <span style="font-size:0.7rem;color:var(--text-muted);" id="workspace-timer"></span>
+                                    </div>
+                                    <pre class="workspace-terminal" id="workspace-terminal"><span style="color:var(--text-muted);">Select a tool and configure options, then click Run.</span></pre>
+                                    <div class="workspace-analysis" id="workspace-analysis" style="display:none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel" id="modules-history-view" style="display:none;">
+                        <div class="panel-header"><h2>Module Run History</h2><button class="view-all-btn" id="refresh-history">Refresh</button></div>
+                        <div id="module-history-list" class="module-history-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== STATS TAB ===== -->
+            <div class="tab-panel" id="tab-stats">
+                <div class="stats-overview">
+                    <div class="panel stat-detailed">
+                        <div class="panel-header"><h2>Level & Rank</h2></div>
+                        <div class="level-display">
+                            <div class="level-number"><span id="stats-level">1</span></div>
+                            <div class="level-info">
+                                <div class="level-rank" id="stats-rank">Shadow Initiate</div>
+                                <div class="level-xp-bar"><div class="level-xp-fill" id="stats-xp-fill" style="width:0%"></div></div>
+                                <div class="level-xp-text"><span id="stats-xp">0</span> / <span id="stats-xp-next">500</span> XP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel skill-breakdown">
+                        <div class="panel-header"><h2>Skill Breakdown</h2></div>
+                        <div class="skill-bars" id="skill-bars"></div>
+                    </div>
+                    <div class="panel stat-detailed">
+                        <div class="panel-header"><h2>Activity Summary</h2></div>
+                        <div class="stats-grid">
+                            <div class="stats-item"><span class="stats-item-label">Tasks Completed</span><span class="stats-item-value" id="stat-tasks-done">0</span></div>
+                            <div class="stats-item"><span class="stats-item-label">XP Earned</span><span class="stats-item-value" id="stat-total-xp">0</span></div>
+                            <div class="stats-item"><span class="stats-item-label">Streak Days</span><span class="stats-item-value" id="stat-streak">0</span></div>
+                            <div class="stats-item"><span class="stats-item-label">Powers Unlocked</span><span class="stats-item-value" id="stat-powers">0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== POWERS TAB ===== -->
+            <div class="tab-panel" id="tab-powers">
+                <div class="panel">
+                    <div class="panel-header"><h2>Unlockable Powers</h2><span style="color:var(--text-secondary);font-size:0.85rem;" id="powers-counter">0 / 100</span></div>
+                    <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:16px;">Each level unlocks a new power. Complete tasks to gain XP and level up.</p>
+                    <div class="powers-grid" id="powers-grid"></div>
+                </div>
+            </div>
+
+            <!-- ===== TUTORIALS TAB ===== -->
+            <div class="tab-panel" id="tab-tutorials">
+                <div class="panel">
+                    <div class="panel-header"><h2>Interactive Tutorials</h2></div>
+                    <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:16px;">Step-by-step walkthroughs for security tools. Complete tutorials to earn XP.</p>
+                    <div class="tutorials-grid" id="tutorials-grid"></div>
+                </div>
+                <div class="panel" id="tutorial-detail-panel" style="display:none;margin-top:16px;">
+                    <div class="panel-header"><h2 id="tutorial-detail-title">Tutorial</h2><button class="view-all-btn" id="close-tutorial">Back</button></div>
+                    <div id="tutorial-detail-body"></div>
+                </div>
+            </div>
+
+            <!-- ===== SNIPPETS TAB ===== -->
+            <div class="tab-panel" id="tab-snippets">
+                <div class="panel">
+                    <div class="panel-header"><h2>Code Snippet Library</h2><button class="view-all-btn" id="add-snippet-btn">+ Add Snippet</button></div>
+                    <div class="snippet-search-bar">
+                        <input type="text" id="snippet-search" placeholder="Search snippets by title, tag, or language..." class="settings-input" style="width:100%;">
+                    </div>
+                    <div class="snippets-grid" id="snippets-grid"></div>
+                </div>
+                <div class="panel" id="snippet-detail-panel" style="display:none;margin-top:16px;">
+                    <div class="panel-header"><h2 id="snippet-detail-title">Snippet</h2><button class="view-all-btn" id="close-snippet">Back</button></div>
+                    <div id="snippet-detail-body"></div>
+                </div>
+            </div>
+
+            <!-- ===== VULNERABILITIES TAB ===== -->
+            <div class="tab-panel" id="tab-vulns">
+                <div class="panel">
+                    <div class="panel-header"><h2>Vulnerability Database</h2></div>
+                    <div class="vuln-search-bar">
+                        <input type="text" id="vuln-search" placeholder="Search by CVE ID, keyword, or software name..." class="settings-input" style="width:70%;">
+                        <button class="settings-save" id="vuln-search-btn" style="width:auto;">Search</button>
+                    </div>
+                    <div class="vuln-results" id="vuln-results"></div>
+                </div>
+                <div class="panel" id="vuln-detail-panel" style="display:none;margin-top:16px;">
+                    <div class="panel-header"><h2 id="vuln-detail-title">CVE Detail</h2><button class="view-all-btn" id="close-vuln">Back</button></div>
+                    <div id="vuln-detail-body"></div>
+                </div>
+            </div>
+
+            <!-- ===== WAR ROOM TAB ===== -->
+            <div class="tab-panel" id="tab-warroom">
+                <!-- Scenario Selector -->
+                <div id="warroom-lobby">
+                    <div class="panel warroom-hero-panel">
+                        <div class="warroom-hero">
+                            <div class="warroom-hero-icon">&#9889;</div>
+                            <h2 class="warroom-hero-title">War Room</h2>
+                            <p class="warroom-hero-subtitle">Choose a battleground. Command your agents. Dominate the digital front.</p>
+                        </div>
+                        <div class="warroom-agent-preview">
+                            <div class="warroom-team-row">
+                                <div class="warroom-team-label red-label">RED TEAM</div>
+                                <div class="warroom-team-agents" id="wr-preview-red">Blade, Hunter, Inferno, Phantom, Assassin, Warlock, Summoner</div>
+                            </div>
+                            <div class="warroom-team-row">
+                                <div class="warroom-team-label blue-label">BLUE TEAM</div>
+                                <div class="warroom-team-agents" id="wr-preview-blue">Shadow, Sentry, Titan, Specter, Ranger, Engineer, Null</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scenario-grid" id="scenario-grid"></div>
+                    <div class="panel" id="warroom-history-panel" style="margin-top:16px;">
+                        <div class="panel-header"><h2>Past Battles</h2></div>
+                        <div id="warroom-history-list" class="warroom-history-list"></div>
+                    </div>
+                </div>
+
+                <!-- Active Battle View -->
+                <div id="warroom-battle" style="display:none;">
+                    <div class="warroom-scorebar" id="wr-scorebar">
+                        <div class="scorebar-team red-team-bar">
+                            <div class="scorebar-label">RED TEAM</div>
+                            <div class="scorebar-score" id="wr-red-score">0</div>
+                            <div class="scorebar-kills" id="wr-red-kills">0 kills</div>
+                        </div>
+                        <div class="scorebar-center">
+                            <div class="scorebar-round" id="wr-round-display">Round 0/7</div>
+                            <div class="scorebar-scenario" id="wr-scenario-name">Scenario</div>
+                            <div class="scorebar-status" id="wr-status">In Progress</div>
+                        </div>
+                        <div class="scorebar-team blue-team-bar">
+                            <div class="scorebar-label">BLUE TEAM</div>
+                            <div class="scorebar-score" id="wr-blue-score">0</div>
+                            <div class="scorebar-kills" id="wr-blue-kills">0 kills</div>
+                        </div>
+                    </div>
+
+                    <!-- Agent Showcase -->
+                    <div class="warroom-battlefield">
+                        <div class="warroom-red-side" id="wr-red-agents"></div>
+                        <div class="warroom-vs-divider">
+                            <div class="vs-circle">&#9876;</div>
+                            <div class="vs-pulse"></div>
+                        </div>
+                        <div class="warroom-blue-side" id="wr-blue-agents"></div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="warroom-controls">
+                        <button class="warroom-btn primary" id="wr-next-round">Next Round</button>
+                        <button class="warroom-btn secondary" id="wr-auto-battle">Auto Battle</button>
+                        <button class="warroom-btn secondary" id="wr-upgrade-btn">Agent Upgrades</button>
+                        <button class="warroom-btn danger" id="wr-end-match">End Match</button>
+                    </div>
+
+                    <!-- Battle Display -->
+                    <div class="warroom-battle-display" id="wr-battle-display" style="display:none;">
+                        <div class="battle-display-header">
+                            <span id="battle-phase">Battle</span>
+                            <button class="battle-dismiss" id="battle-dismiss">&#10005;</button>
+                        </div>
+                        <div class="battle-animation-area">
+                            <canvas id="battle-canvas" width="800" height="200"></canvas>
+                        </div>
+                        <div class="battle-narrative" id="battle-narrative"></div>
+                        <div class="battle-impact" id="battle-impact"></div>
+                        <div class="battle-flavor" id="battle-flavor"></div>
+                    </div>
+
+                    <!-- Battle Log -->
+                    <div class="panel" style="margin-top:16px;">
+                        <div class="panel-header"><h2>Battle Log</h2><span style="color:var(--text-muted);font-size:0.75rem;" id="wr-log-count">0 rounds</span></div>
+                        <div class="battle-log" id="wr-battle-log"></div>
+                    </div>
+                </div>
+
+                <!-- Agent Upgrades Panel -->
+                <div id="warroom-upgrades" style="display:none;">
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h2>Agent Upgrades</h2>
+                            <div style="display:flex;gap:8px;align-items:center;">
+                                <span style="color:var(--text-muted);font-size:0.75rem;" id="wr-upgrade-xp">XP: 0</span>
+                                <button class="view-all-btn" id="wr-upgrade-back">Back to Battle</button>
+                            </div>
+                        </div>
+                        <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:12px;">Spend XP earned in battles to upgrade your agents' stats.</p>
+                        <div class="upgrade-grid" id="upgrade-grid"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== NEWS TAB ===== -->
+            <div class="tab-panel" id="tab-news">
+                <div class="news-filters">
+                    <button class="news-filter active" data-category="all">All</button>
+                    <button class="news-filter" data-category="hacking">Hacking News</button>
+                    <button class="news-filter" data-category="ai">AI News</button>
+                </div>
+                <div class="panel" style="margin-top:16px;">
+                    <div class="news-full-list" id="news-full-list"></div>
+                </div>
+            </div>
+
+            <!-- ===== SETTINGS TAB ===== -->
+            <div class="tab-panel" id="tab-settings">
+                <div class="settings-layout">
+                    <div class="panel settings-section">
+                        <div class="panel-header"><h2>AI Providers</h2></div>
+                        <p style="color:var(--text-muted);font-size:0.75rem;margin-bottom:12px;">Add multiple AI providers with different models. Active providers are used for all AI features.</p>
+                        <div id="providers-list" class="providers-list"></div>
+                        <button class="settings-save" id="add-provider-btn" style="margin-top:8px;width:100%;">+ Add Provider</button>
+                    </div>
+                    <div class="panel settings-section">
+                        <div class="panel-header"><h2>API Configuration (Legacy)</h2></div>
+                        <div class="settings-form">
+                            <div class="settings-field">
+                                <label>OpenAI API Key</label>
+                                <input type="password" id="set-openai" placeholder="sk-..." class="settings-input">
+                            </div>
+                            <div class="settings-field">
+                                <label>Gemini API Key</label>
+                                <input type="password" id="set-gemini" placeholder="AIza..." class="settings-input">
+                            </div>
+                            <button class="settings-save" id="save-api-keys">Save API Keys</button>
+                        </div>
+                    </div>
+                    <div class="panel settings-section">
+                        <div class="panel-header"><h2>Agent Personalities</h2></div>
+                        <p style="color:var(--text-muted);font-size:0.75rem;margin-bottom:12px;">Customize each agent's personality prompt. Changes take effect on next chat.</p>
+                        <div id="agent-personalities-list" class="agent-personalities-list"></div>
+                    </div>
+                    <div class="panel settings-section">
+                        <div class="panel-header"><h2>Profile</h2></div>
+                        <div class="settings-form">
+                            <div class="settings-field">
+                                <label>Username</label>
+                                <input type="text" id="set-username" class="settings-input">
+                            </div>
+                            <div class="settings-field">
+                                <label>Email</label>
+                                <input type="email" id="set-email" class="settings-input">
+                            </div>
+                            <button class="settings-save" id="save-profile">Save Profile</button>
+                        </div>
+                    </div>
+                    <div class="panel settings-section">
+                        <div class="panel-header"><h2>Account Actions</h2></div>
+                        <div class="settings-actions">
+                            <button class="settings-action-btn" id="export-pdf">Export PDF Report</button>
+                            <button class="settings-action-btn" id="export-json">Export JSON Data</button>
+                            <button class="settings-action-btn" id="generate-report">Generate Pentest Report</button>
+                            <button class="settings-action-btn danger" id="reset-progress">Reset Progress</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Terminal -->
+        <div class="terminal-container" id="terminal-container">
+            <div class="terminal-topbar" id="terminal-drag">
+                <span>DARK-X Terminal</span>
+                <div class="terminal-actions">
+                    <button class="terminal-btn" id="term-clear" title="Clear">&#10003;</button>
+                    <button class="terminal-btn" id="term-minimize" title="Minimize">&#9472;</button>
+                    <button class="terminal-btn" id="term-close" title="Close">&#10005;</button>
+                </div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div class="terminal-line welcome">DARK-X v1.0 — System Interface Active</div>
+                <div class="terminal-line">Type /help for commands. Type /arise to awaken the system.</div>
+            </div>
+            <div class="terminal-input-row">
+                <span class="terminal-prompt">dark-x&gt;</span>
+                <input type="text" class="terminal-input" id="terminal-input" spellcheck="false" autofocus>
+            </div>
+        </div>
+        <div class="terminal-toggle" id="terminal-toggle" title="Toggle Terminal">&#9001;</div>
+    </main>
+</div>
+
+<div class="level-up-overlay" id="level-up-overlay">
+    <div class="level-up-content">
+        <div class="level-up-icon">&#9889;</div>
+        <div class="level-up-text">LEVEL UP</div>
+        <div class="level-up-detail" id="level-up-detail">Level 1</div>
+        <div class="level-up-power" id="level-up-power"></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="/static/js/auth.js"></script>
+<script src="/static/js/app.js"></script>
+<script src="/static/js/news.js"></script>
+<script src="/static/js/tasks.js"></script>
+<script src="/static/js/modules.js"></script>
+<script src="/static/js/settings.js"></script>
+<script src="/static/js/terminal.js"></script>
+<script src="/static/js/dashboard.js"></script>
+</body>
+</html>

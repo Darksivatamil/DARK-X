@@ -1,0 +1,1957 @@
+# 🕶️ DARK-X — Master Build Plan Index
+# 🕶️ DARK-X — Master Implementation Plan
+> **"From Zero to Shadow Monarch — This is not a game, it's a life changer."**
+> **A Gamified Ethical Hacking AI Agent Platform & Skill Upgrader System**
+> *"From Zero to Master — This is not a game, it's a life changer."*
+---
+## How to Use These Plans
+## Project Overview
+Each part below is a **self-contained build plan**. You can give any part to an AI (or build it yourself) and it will produce working code. Build them **in order** — each part depends on the previous ones.
+DARK-X is a full-stack web application that combines:
+- 🤖 **13+ AI Agents** — each with unique names, personalities, and capabilities
+- 🎮 **Gamified Skill Progression** — Solo Leveling-inspired leveling system with 100 unique powers
+- 📡 **Live Security Modules** — Network scanning, traffic analysis, fuzzing, and more
+- 📰 **Daily Content** — Hacking news, AI updates, tool guides, and coding challenges
+- 🖥️ **Premium Dark UI** — Anime-inspired dashboard with electric effects, particles, and animations
+- 💬 **DARK-GUIDE-X Chat Agent** — Full DARK-GUIDE skill integrated as a chat companion
+- 🔐 **Auth System** — Username/password login with session management
+- ⌨️ **Command Terminal** — `/arise`, `/rest`, `/refresh`, `/logout` and agent commands
+> [!TIP]
+> **Workflow**: Open Part 1 → give it to an AI → verify it works → move to Part 2 → repeat until Part 8 is done → DARK-X is live.
+---
+## Tech Stack
+|
+ Layer 
+|
+ Technology 
+|
+ Purpose 
+|
+|
+-------
+|
+-----------
+|
+---------
+|
+|
+**
+Backend
+**
+|
+ Python 3.12 + FastAPI 
+|
+ REST API, WebSocket, async tasks 
+|
+|
+**
+Database
+**
+|
+ SQLite + SQLAlchemy 
+|
+ User data, progress, agent memory 
+|
+|
+**
+Frontend
+**
+|
+ HTML5 + Vanilla CSS + JS 
+|
+ Solo Leveling-inspired UI 
+|
+|
+**
+AI Engine
+**
+|
+ OpenAI / Gemini API (configurable) 
+|
+ Agent intelligence 
+|
+|
+**
+Animations
+**
+|
+ Particles.js, GSAP, CSS animations 
+|
+ Electric/glitch effects 
+|
+|
+**
+Terminal
+**
+|
+ xterm.js 
+|
+ In-browser command terminal 
+|
+|
+**
+Charts
+**
+|
+ Chart.js 
+|
+ Live graphs and statistics 
+|
+|
+**
+Auth
+**
+|
+ JWT tokens + bcrypt 
+|
+ Secure login system 
+|
+|
+**
+News
+**
+|
+ RSS feeds + web scraping 
+|
+ Daily hacking/AI news 
+|
+|
+**
+Export
+**
+|
+ ReportLab, openpyxl, markdown 
+|
+ PDF, Excel, MD, JSON exports 
+|
+---
+## 📋 Build Parts
+## User Review Required
+|
+ Part 
+|
+ Plan File 
+|
+ What It Builds 
+|
+ Files 
+|
+|
+------
+|
+-----------
+|
+----------------
+|
+-------
+|
+|
+**
+Part 1
+**
+|
+[
+plan_part_1.md
+](
+file:///C:/Users/Admin/.gemini/antigravity/brain/89676d50-7cfe-4aef-919c-2c2e411d0673/plan_part_1.md
+)
+|
+ 🔧 
+**
+Core Backend & Setup
+**
+ — FastAPI server, config, database, project structure 
+|
+ ~20 
+|
+|
+**
+Part 2
+**
+|
+[
+plan_part_2.md
+](
+file:///C:/Users/Admin/.gemini/antigravity/brain/89676d50-7cfe-4aef-919c-2c2e411d0673/plan_part_2.md
+)
+|
+ 🔐 
+**
+Auth System & Database
+**
+ — Register, login, JWT, all models, user progress 
+|
+ ~10 
+|
+|
+**
+Part 3
+**
+|
+[
+plan_part_3.md
+](
+file:///C:/Users/Admin/.gemini/antigravity/brain/89676d50-7cfe-4aef-919c-2c2e411d0673/plan_part_3.md
+)
+|
+ 🎨 
+**
+Dashboard UI
+**
+ — Solo Leveling theme, particles, animations, terminal, all tabs 
+|
+ ~23 
+|
+|
+**
+Part 4
+**
+|
+[
+plan_part_4.md
+](
+file:///C:/Users/Admin/.gemini/antigravity/brain/89676d50-7cfe-4aef-919c-2c2e411d0673/plan_part_4.md
+)
+|
+ 🤖 
+**
+AI Agent System
+**
+ — 15 named agents, agent bus, 
+`/arise`
+, WebSocket, memory 
+|
+ ~7 
+|
+|
+**
+Part 5
+**
+|
+[
+plan_part_5.md
+](
+file:///C:/Users/Admin/.gemini/antigravity/brain/89676d50-7cfe-4aef-919c-2c2e411d0673/plan_part_5.md
+)
+|
+ 🛡️ 
+**
+Security Modules
+**
+ — 10 live tools with UI, graphs, AI analysis 
+|
+ ~15 
+|
+|
+**
+Part 6
+**
+|
+[
+plan_part_6.md
+](
+file:///C:/Users/Admin/.gemini/antigravity/brain/89676d50-7cfe-4aef-919c-2c2e411d0673/plan_part_6.md
+)
+|
+ 🎮 
+**
+Gamification Engine
+**
+ — Leveling, ranks, 100 powers, random events, streaks 
+|
+ ~5 
+|
+|
+**
+Part 7
+**
+|
+[
+plan_part_7.md
+](
+file:///C:/Users/Admin/.gemini/antigravity/brain/89676d50-7cfe-4aef-919c-2c2e411d0673/plan_part_7.md
+)
+|
+ 📋 
+**
+Task & Content
+**
+ — Daily tasks (4 tracks), code grading, news feeds 
+|
+ ~5 
+|
+|
+**
+Part 8
+**
+|
+[
+plan_part_8.md
+](
+file:///C:/Users/Admin/.gemini/antigravity/brain/89676d50-7cfe-4aef-919c-2c2e411d0673/plan_part_8.md
+)
+|
+ 🚀 
+**
+Deploy & Polish
+**
+ — Export (PDF/Excel/JSON), offline mode, VPS deploy, final polish 
+|
+ ~8 
+|
+> [!IMPORTANT]
+> **AI API Key Requirement**: DARK-X needs an AI API key (OpenAI or Google Gemini) to power the agents. The settings page will let you configure this. Which provider do you prefer as the default — **OpenAI (GPT-4)** or **Google Gemini**?
+**Total: ~93 files → Complete DARK-X Platform**
+> [!IMPORTANT]  
+> **Deployment Target**: You mentioned deploying online for private use. I recommend deploying on a **VPS (like DigitalOcean/Linode)** with Nginx reverse proxy + SSL, accessible only via your credentials. Are you okay with this approach, or do you prefer a different hosting solution?
+> [!WARNING]
+> **Security Tools Scope**: Modules like network scanning, payload generation, and pentesting tools will be **simulation/educational wrappers** that call real tools (nmap, metasploit) only when those tools are installed on the host system (Kali Linux). On Windows, they'll run in educational/demo mode. This ensures the platform works on both OS targets.
+---
+## 🏗️ Build Dependency Chain
+## Open Questions
+```mermaid
+graph LR
+    P1["Part 1<br/>🔧 Backend"] --> P2["Part 2<br/>🔐 Auth"]
+    P2 --> P3["Part 3<br/>🎨 Dashboard"]
+    P3 --> P4["Part 4<br/>🤖 Agents"]
+    P4 --> P5["Part 5<br/>🛡️ Modules"]
+    P4 --> P6["Part 6<br/>🎮 Gamification"]
+    P5 --> P7["Part 7<br/>📋 Tasks"]
+    P6 --> P7
+    P7 --> P8["Part 8<br/>🚀 Deploy"]
+> [!IMPORTANT]
+> 1. **AI Provider Preference**: OpenAI GPT-4 or Google Gemini as primary? (Both will be supported, but which is default?)
+> 2. **Starting Skill Level**: Should all 4 tracks (Python, Kali, AI, New Skills) start at Level 1, or should there be an initial assessment quiz?
+> 3. **Language**: Should the UI and tasks be in English only, or do you want multi-language support later?
+> 4. **Max Level Cap**: The Solo Leveling system — should max level be 100? 200? Or unlimited?
+---
+## 🏗️ Part Breakdown
+The project is split into **8 Parts**, built sequentially:
+|
+ Part 
+|
+ Name 
+|
+ Description 
+|
+ Est. Files 
+|
+|
+------
+|
+------
+|
+-------------
+|
+-----------
+|
+|
+**
+Part 1
+**
+|
+ 🔧 Core Backend & Project Setup 
+|
+ FastAPI server, project structure, config 
+|
+ ~15 
+|
+|
+**
+Part 2
+**
+|
+ 🔐 Auth System & Database 
+|
+ Login/register, user model, sessions 
+|
+ ~10 
+|
+|
+**
+Part 3
+**
+|
+ 🎨 Dashboard UI — Solo Leveling Theme 
+|
+ Main dashboard, animations, particles, layout 
+|
+ ~12 
+|
+|
+**
+Part 4
+**
+|
+ 🤖 AI Agent System 
+|
+ 13+ named agents, agent bus, memory, personalities 
+|
+ ~20 
+|
+|
+**
+Part 5
+**
+|
+ 🛡️ Security Modules (Live Tools) 
+|
+ Network scanner, fuzzer, traffic analyzer, etc. 
+|
+ ~15 
+|
+|
+**
+Part 6
+**
+|
+ 🎮 Gamification Engine 
+|
+ Leveling, XP, 100 powers, random events, ranks 
+|
+ ~10 
+|
+|
+**
+Part 7
+**
+|
+ 📋 Task & Content System 
+|
+ Daily tasks, news feeds, code submission, scoring 
+|
+ ~12 
+|
+|
+**
+Part 8
+**
+|
+ 🚀 Deployment & Polish 
+|
+ Online deploy, offline mode, export, final polish 
+|
+ ~8 
+|
+---
+## PART 1 — 🔧 Core Backend & Project Setup
+### Project Structure
+```
+dark-x/
+├── backend/
+│   ├── main.py                    # FastAPI app entry point
+│   ├── config.py                  # Settings, API keys, environment
+│   ├── database.py                # SQLAlchemy setup
+│   ├── models/                    # Database models
+│   │   ├── __init__.py
+│   │   ├── user.py                # User model
+│   │   ├── progress.py            # Level, XP, skills
+│   │   ├── task.py                # Daily tasks, submissions
+│   │   ├── agent.py               # Agent configs, memory
+│   │   └── event.py               # Random events, powers
+│   ├── routers/                   # API endpoints
+│   │   ├── __init__.py
+│   │   ├── auth.py                # Login/register
+│   │   ├── dashboard.py           # Dashboard data
+│   │   ├── agents.py              # Agent interactions
+│   │   ├── tasks.py               # Task management
+│   │   ├── news.py                # News feeds
+│   │   ├── modules.py             # Security modules
+│   │   ├── settings.py            # User settings, API keys
+│   │   └── export.py              # File export
+│   ├── agents/                    # AI Agent system
+│   │   ├── __init__.py
+│   │   ├── base_agent.py          # Base agent class
+│   │   ├── agent_bus.py           # Agent communication bus
+│   │   ├── agent_registry.py      # Agent registry & lifecycle
+│   │   ├── dark_guide_x.py        # DARK-GUIDE-X chat agent
+│   │   ├── agnes.py               # AGNES - tool guide agent
+│   │   ├── phantom_recon.py       # Recon agent
+│   │   ├── cipher_mind.py         # Crypto agent
+│   │   ├── neural_hawk.py         # Traffic analysis agent
+│   │   ├── void_fuzzer.py         # Fuzzing agent
+│   │   ├── shadow_scan.py         # Network scanning agent
+│   │   ├── ghost_payload.py       # Payload generation agent
+│   │   ├── swarm_mind.py          # Distributed scanning agent
+│   │   ├── echo_twin.py           # Digital twin agent
+│   │   ├── zero_trace.py          # Zero-knowledge recon agent
+│   │   ├── quantum_eye.py         # Quantum readiness agent
+│   │   ├── apex_campaign.py       # Red team campaign agent
+│   │   └── skill_forge.py         # Skill upgrader agent
+│   ├── modules/                   # Security tool modules
+│   │   ├── __init__.py
+│   │   ├── network_scanner.py     # Nmap integration
+│   │   ├── payload_gen.py         # Payload generator
+│   │   ├── fuzzer.py              # AI fuzzing engine
+│   │   ├── traffic_analyzer.py    # Traffic analysis
+│   │   ├── vuln_chain.py          # Vulnerability chaining
+│   │   ├── evasion.py             # Adaptive evasion
+│   │   ├── swarm_scanner.py       # Distributed scanner
+│   │   ├── digital_twin.py        # Attack simulation
+│   │   ├── quantum_assess.py      # Post-quantum assessment
+│   │   └── recon_engine.py        # Autonomous recon
+│   ├── services/                  # Business logic
+│   │   ├── __init__.py
+│   │   ├── ai_service.py          # AI API integration
+│   │   ├── news_service.py        # News fetching
+│   │   ├── task_service.py        # Task generation & scoring
+│   │   ├── gamification.py        # XP, levels, powers
+│   │   ├── export_service.py      # File export logic
+│   │   └── connectivity.py        # Online/offline detection
+│   └── utils/
+│       ├── __init__.py
+│       ├── security.py            # Password hashing, JWT
+│       └── helpers.py             # Utility functions
+├── frontend/
+│   ├── index.html                 # Login page
+│   ├── dashboard.html             # Main dashboard
+│   ├── css/
+│   │   ├── main.css               # Core theme (Solo Leveling dark)
+│   │   ├── animations.css         # Electric, glitch, particle effects
+│   │   ├── login.css              # Login page styles
+│   │   ├── dashboard.css          # Dashboard layout
+│   │   ├── terminal.css           # Terminal styles
+│   │   ├── agents.css             # Agent cards & panels
+│   │   ├── tasks.css              # Task board styles
+│   │   └── modules.css            # Security module UI
+│   ├── js/
+│   │   ├── app.js                 # Main application logic
+│   │   ├── auth.js                # Login/register logic
+│   │   ├── dashboard.js           # Dashboard controller
+│   │   ├── terminal.js            # Terminal (xterm.js)
+│   │   ├── agents.js              # Agent management
+│   │   ├── tasks.js               # Task board
+│   │   ├── modules.js             # Security module UI
+│   │   ├── particles-config.js    # Particle effects config
+│   │   ├── effects.js             # UI effects (electric, glitch)
+│   │   ├── charts.js              # Live chart rendering
+│   │   ├── websocket.js           # WebSocket client
+│   │   ├── news.js                # News feed
+│   │   ├── settings.js            # Settings page
+│   │   └── export.js              # Export functionality
+│   └── assets/
+│       ├── fonts/                 # Custom fonts
+│       └── sounds/                # UI sound effects
+├── data/
+│   ├── powers.json                # 100 unique powers
+│   ├── random_events.json         # Random event definitions
+│   ├── agent_profiles.json        # Agent names & personalities
+│   └── skill_trees.json           # Skill progression trees
+├── requirements.txt
+├── .env.example                   # Environment template
+└── README.md
+```
+### [NEW] backend/main.py
+FastAPI application with:
+- CORS middleware for frontend
+- Static file serving for frontend
+- WebSocket endpoints for terminal and agent chat
+- Startup event to initialize database and agent bus
+- Shutdown event for cleanup
+- Background task scheduler for daily tasks and news
+### [NEW] backend/config.py
+- Environment variable loading from `.env`
+- API key management (OpenAI, Gemini, custom)
+- Database path configuration
+- Online/offline mode detection
+- Logging configuration
+### [NEW] requirements.txt
+```
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+sqlalchemy==2.0.35
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.1
+httpx==0.27.0
+openai==1.50.0
+google-generativeai==0.8.0
+feedparser==6.0.11
+reportlab==4.2.0
+openpyxl==3.1.5
+websockets==12.0
+aiofiles==24.1.0
+python-multipart==0.0.9
+jinja2==3.1.4
+```
+---
+## 🎯 What You Get When Complete
+## PART 2 — 🔐 Auth System & Database
+|
+ Feature 
+|
+ Details 
+|
+|
+---------
+|
+---------
+|
+|
+ 🤖 
+**
+15 AI Agents
+**
+|
+ DARK-GUIDE-X, AGNES, PHANTOM, CIPHER-MIND, NEURAL-HAWK, VOID-FUZZER, SHADOW-SCAN, GHOST-PAYLOAD, SWARM-MIND, ECHO-TWIN, ZERO-TRACE, QUANTUM-EYE, APEX-STORM, SKILL-FORGE, VENOM-CHAIN 
+|
+|
+ 🛡️ 
+**
+10 Security Modules
+**
+|
+ Network Scanner, Payload Generator, AI Fuzzer, Traffic Analyzer, Vuln Chain, Evasion Simulator, Swarm Scanner, Digital Twin, Quantum Assessor, Recon Engine 
+|
+|
+ 🎮 
+**
+Gamification
+**
+|
+ 8 ranks (Shadow Initiate → Shadow Monarch), 100 unique powers, 10 random event types, daily streaks, XP system 
+|
+|
+ 📋 
+**
+4 Daily Task Tracks
+**
+|
+ Python coding, Kali Linux tools, AI tricks, Industry skills — all AI-generated, unique, and fun 
+|
+|
+ 📰 
+**
+Live News
+**
+|
+ Hacking news + AI news from real RSS feeds 
+|
+|
+ 🖥️ 
+**
+Solo Leveling UI
+**
+|
+ Particles, electric effects, glassmorphism, glitch text, holographic cards, level-up animations 
+|
+|
+ ⌨️ 
+**
+Terminal Commands
+**
+|
+`/arise`
+, 
+`/rest`
+, 
+`/refresh`
+, 
+`/logout`
+, 
+`/'agent-name'`
+, 
+`/help`
+, 
+`/status`
+|
+|
+ 📥 
+**
+Export
+**
+|
+ PDF, Excel, JSON, Markdown, ZIP full backup 
+|
+|
+ 🌐 
+**
+Deployment
+**
+|
+ VPS + Nginx + SSL or Cloudflare Tunnel 
+|
+|
+ 🔌 
+**
+Offline Mode
+**
+|
+ Graceful degradation with clear indicators 
+|
+### [NEW] backend/models/user.py
+User model with fields:
+- `id`, `username`, `password_hash`
+- `created_at`, `last_login`, `total_login_time`
+- `api_keys` (JSON — stores OpenAI, Gemini keys)
+- `settings` (JSON — UI preferences, notification prefs)
+- `is_online` status
+### [NEW] backend/models/progress.py
+Progress tracking:
+- `user_id`, `overall_level`, `total_xp`
+- `python_level`, `python_xp`
+- `kali_level`, `kali_xp`
+- `ai_level`, `ai_xp`
+- `industry_level`, `industry_xp`
+- `powers_unlocked` (JSON array of power IDs)
+- `current_rank` (e.g., "Shadow Initiate", "Cyber Hunter", etc.)
+- `streak_days`, `tasks_completed`, `tasks_submitted`
+### [NEW] backend/routers/auth.py
+Endpoints:
+- `POST /api/auth/register` — Create account (username + password)
+- `POST /api/auth/login` — Login, returns JWT token, records timestamp
+- `POST /api/auth/logout` — Logout, updates session stats
+- `GET /api/auth/me` — Get current user profile
+- `PUT /api/auth/settings` — Update API keys and preferences
+### Database Schema Diagram
+```
+┌──────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│    users     │     │    progress      │     │   task_history   │
+├──────────────┤     ├──────────────────┤     ├─────────────────┤
+│ id (PK)      │──┐  │ id (PK)          │     │ id (PK)         │
+│ username     │  └──│ user_id (FK)     │  ┌──│ user_id (FK)    │
+│ password_hash│     │ overall_level    │  │  │ task_type       │
+│ api_keys     │     │ total_xp         │  │  │ difficulty      │
+│ settings     │     │ python_level     │  │  │ submitted_code  │
+│ created_at   │     │ kali_level       │  │  │ score           │
+│ last_login   │     │ ai_level         │  │  │ xp_earned       │
+│ login_stats  │     │ industry_level   │  │  │ created_at      │
+└──────────────┘     │ powers_unlocked  │  │  │ completed_at    │
+                     │ current_rank     │  │  └─────────────────┘
+                     └──────────────────┘  │
+                                           │  ┌─────────────────┐
+                     ┌──────────────────┐  │  │  agent_memory   │
+                     │  daily_events    │  │  ├─────────────────┤
+                     ├──────────────────┤  │  │ id (PK)         │
+                     │ id (PK)          │  └──│ user_id (FK)    │
+                     │ user_id (FK)     │     │ agent_name      │
+                     │ event_type       │     │ memory_data     │
+                     │ event_data       │     │ context         │
+                     │ triggered_at     │     │ updated_at      │
+                     └──────────────────┘     └─────────────────┘
+```
+---
+## ⚠️ Open Questions
+## PART 3 — 🎨 Dashboard UI — Solo Leveling Theme
+> [!IMPORTANT]
+> 1. **AI Provider**: Which should be the default — **OpenAI** or **Google Gemini**? (Both are supported, user can configure in Settings)
+> 2. **Max Level**: Should the level cap be **100** or **unlimited**?
+> 3. **Sound Effects**: Want me to generate placeholder sound files, or skip sounds for now?
+This is the visual heart of DARK-X. Inspired by **Sung Jin-Woo's System Screen** from Solo Leveling.
+### Design System
+#### Color Palette
+```css
+/* Solo Leveling-inspired palette */
+--bg-void:        #0a0a0f;           /* Deep void black */
+--bg-dark:        #0d1117;           /* GitHub dark */
+--bg-card:        #161b22;           /* Card background */
+--bg-card-hover:  #1c2333;           /* Card hover */
+--border-glow:    #00d4ff;           /* Cyan electric glow */
+--accent-primary: #7b2ff7;           /* Purple — main accent */
+--accent-secondary: #00d4ff;         /* Cyan — secondary */
+--accent-danger:  #ff3366;           /* Red — danger/critical */
+--accent-success: #00ff88;           /* Green — success */
+--accent-warning: #ffaa00;           /* Gold — warnings/XP */
+--accent-legendary: #ff6b35;        /* Orange — legendary items */
+--text-primary:   #e6edf3;           /* Light text */
+--text-secondary: #8b949e;           /* Muted text */
+--text-glow:      #00d4ff;           /* Glowing text */
+--gradient-hero:  linear-gradient(135deg, #7b2ff7, #00d4ff);
+--gradient-fire:  linear-gradient(135deg, #ff3366, #ff6b35);
+--gradient-dark:  linear-gradient(180deg, #0a0a0f, #161b22);
+```
+#### Typography
+- **Primary Font**: `'Orbitron'` (futuristic, techy)
+- **Body Font**: `'Rajdhani'` (clean, readable, slightly futuristic)
+- **Terminal Font**: `'JetBrains Mono'` (monospace, coding)
+- All from Google Fonts
+### [NEW] frontend/index.html — Login Page
+- Full-screen dark void background with particle effect
+- Centered glowing login card with glassmorphism
+- "DARK-X" title with electric pulse animation
+- Username & Password inputs with neon glow on focus
+- Login/Register toggle
+- Animated grid lines in background (Solo Leveling system style)
+### [NEW] frontend/dashboard.html — Main Dashboard
+Layout (single-page app with dynamic panels):
+```
+┌────────────────────────────────────────────────────────────────┐
+│  TOP BAR — Level Badge | XP Bar | Rank | Online Status | ⚙️   │
+├──────────┬─────────────────────────────────────────────────────┤
+│          │                                                     │
+│  SIDE    │   MAIN CONTENT AREA (dynamic panels)               │
+│  NAV     │                                                     │
+│          │   ┌─────────┐ ┌─────────┐ ┌─────────┐             │
+│  🏠 Home │   │ Agent 1 │ │ Agent 2 │ │ Agent 3 │  Agent Grid │
+│  🤖 Agents│   │ ░░░░░░░ │ │ ░░░░░░░ │ │ ░░░░░░░ │             │
+│  📋 Tasks │   └─────────┘ └─────────┘ └─────────┘             │
+│  📰 News │                                                     │
+│  🛡️ Modules│  ┌──────────────────────────────────────┐         │
+│  📊 Stats │   │        Daily Tasks Board             │         │
+│  ⚡ Powers│   │  Python | Kali | AI | Skills         │         │
+│  ⚙️ Settings│ └──────────────────────────────────────┘         │
+│          │                                                     │
+│          │   ┌─────────────┐ ┌─────────────────────┐          │
+│          │   │ 📰 News Feed │ │ 📊 Live Stats Graph │          │
+│          │   └─────────────┘ └─────────────────────┘          │
+│          │                                                     │
+├──────────┴─────────────────────────────────────────────────────┤
+│  FLOATING TERMINAL (xterm.js) — draggable, resizable          │
+│  > /arise                                                      │
+│  > System Awakening... All agents activated.                   │
+└────────────────────────────────────────────────────────────────┘
+```
+### Key UI Components
+#### 1. Agent Cards (Holographic Style)
+- Glowing border that pulses when active
+- Agent avatar/icon with glow effect
+- Status indicator (🟢 Active / 🔴 Dormant / 🟡 Processing)
+- Agent name, role, and brief description
+- Click to expand into full agent panel
+#### 2. XP Progress Bar
+- Animated gradient bar with particle trail
+- Level number with electric glow
+- Rank title display with color coding
+- XP numbers (current / needed)
+#### 3. Level-Up Animation
+- Full-screen flash effect
+- Solo Leveling "LEVEL UP" text animation
+- New power unlock notification
+- Sound effect trigger
+- Particle explosion
+#### 4. Floating Terminal
+- xterm.js terminal at bottom-right
+- Draggable and resizable
+- Transparent background with neon border
+- Custom command parser for `/arise`, `/rest`, etc.
+- Agent response rendering
+#### 5. Tab System
+- Clickable tabs for each section
+- Smooth slide-in/out transitions
+- Active tab glow indicator
+- Tabs: Home, Agents, Tasks, News, Modules, Stats, Powers, Settings
+### [NEW] frontend/css/animations.css
+Animation library including:
+- `@keyframes electricPulse` — Cyan glow pulsing on borders
+- `@keyframes glitchText` — Text glitch/scramble effect
+- `@keyframes particleFloat` — Floating particle movement
+- `@keyframes levelUp` — Full-screen level up flash
+- `@keyframes powerUnlock` — Power acquisition effect
+- `@keyframes systemAwaken` — `/arise` activation cascade
+- `@keyframes scanLine` — CRT scan line effect
+- `@keyframes dataStream` — Matrix-style data rain
+- `@keyframes holoShimmer` — Holographic card shimmer
+- `@keyframes rankUpgrade` — Rank change celebration
+- `@keyframes agentActivate` — Agent wake-up glow expansion
+- `@keyframes taskComplete` — Task completion celebration
+---
+## 🚀 Ready to Build?
+## PART 4 — 🤖 AI Agent System
+**Start with Part 1** → open [plan_part_1.md](file:///C:/Users/Admin/.gemini/antigravity/brain/89676d50-7cfe-4aef-919c-2c2e411d0673/plan_part_1.md) and build it. Each part tells you exactly what files to create, what code to write, and how to verify it works.
+### Agent Registry — 15 Named Agents
+*The system has chosen you. Type `/arise` to begin.* 🕶️⚡
+|
+#
+|
+ Code Name 
+|
+ Full Name 
+|
+ Role 
+|
+ Specialty 
+|
+|
+---
+|
+-----------
+|
+-----------
+|
+------
+|
+-----------
+|
+|
+ 1 
+|
+**
+DARK-GUIDE-X
+**
+|
+ Dark Guide X 
+|
+ 💬 Master Chat Agent 
+|
+ Full DARK-GUIDE skill, hacking mentor 
+|
+|
+ 2 
+|
+**
+AGNES
+**
+|
+ A.G.N.E.S. 
+|
+ 📚 Tool Guide Agent 
+|
+ Step-by-step tool tutorials for beginners 
+|
+|
+ 3 
+|
+**
+PHANTOM
+**
+|
+ Phantom Recon 
+|
+ 🔍 Recon Agent 
+|
+ Zero-knowledge autonomous reconnaissance 
+|
+|
+ 4 
+|
+**
+CIPHER-MIND
+**
+|
+ Cipher Mind 
+|
+ 🔐 Crypto Agent 
+|
+ Cryptographic analysis, quantum readiness 
+|
+|
+ 5 
+|
+**
+NEURAL-HAWK
+**
+|
+ Neural Hawk 
+|
+ 📡 Traffic Agent 
+|
+ Encrypted traffic classification, deep packet AI 
+|
+|
+ 6 
+|
+**
+VOID-FUZZER
+**
+|
+ Void Fuzzer 
+|
+ 🐛 Fuzzing Agent 
+|
+ AI-powered semantically meaningful fuzz inputs 
+|
+|
+ 7 
+|
+**
+SHADOW-SCAN
+**
+|
+ Shadow Scan 
+|
+ 🌐 Network Agent 
+|
+ Network scanning with AI analysis 
+|
+|
+ 8 
+|
+**
+GHOST-PAYLOAD
+**
+|
+ Ghost Payload 
+|
+ 👻 Payload Agent 
+|
+ Stealth payload generation for authorized testing 
+|
+|
+ 9 
+|
+**
+SWARM-MIND
+**
+|
+ Swarm Mind 
+|
+ 🐝 Swarm Agent 
+|
+ Distributed coordinated scanning intelligence 
+|
+|
+ 10 
+|
+**
+ECHO-TWIN
+**
+|
+ Echo Twin 
+|
+ 🪞 Digital Twin Agent 
+|
+ Virtual attack rehearsal & simulation 
+|
+|
+ 11 
+|
+**
+ZERO-TRACE
+**
+|
+ Zero Trace 
+|
+ 🕳️ Discovery Agent 
+|
+ Fully autonomous recon from scratch 
+|
+|
+ 12 
+|
+**
+QUANTUM-EYE
+**
+|
+ Quantum Eye 
+|
+ ⚛️ Quantum Agent 
+|
+ Post-quantum crypto vulnerability detection 
+|
+|
+ 13 
+|
+**
+APEX-STORM
+**
+|
+ Apex Storm 
+|
+ ⚔️ Red Team Agent 
+|
+ Autonomous red team campaign management 
+|
+|
+ 14 
+|
+**
+SKILL-FORGE
+**
+|
+ Skill Forge 
+|
+ 🔥 Upgrader Agent 
+|
+ NEW SKILL UPGRADER — industry skill trainer 
+|
+|
+ 15 
+|
+**
+VENOM-CHAIN
+**
+|
+ Venom Chain 
+|
+ 🔗 Exploit Chain Agent 
+|
+ Multi-hop vulnerability chaining with AI reasoning 
+|
+### [NEW] backend/agents/base_agent.py
+Base agent class providing:
+```python
+class BaseAgent:
+    name: str              # Agent code name
+    full_name: str         # Display name  
+    role: str              # Brief role description
+    personality: str       # Personality traits for AI prompts
+    capabilities: list     # List of things this agent can do
+    is_active: bool        # Active/dormant state
+    status: str            # "dormant" | "active" | "processing"
+    memory: dict           # Persistent memory per user
+    offline_capable: bool  # Can work without internet?
+    
+    async def activate(user_id)      # Wake up with intro message
+    async def deactivate()           # Go dormant
+    async def process(message, user) # Handle user interaction
+    async def get_intro()            # Self-introduction
+    async def remember(key, value)   # Store to memory
+    async def recall(key)            # Retrieve from memory
+```
+### [NEW] backend/agents/agent_bus.py
+Agent communication & lifecycle manager:
+- Register/unregister agents
+- `/arise` — Activate all agents sequentially with intro messages
+- `/rest` — Deactivate all agents
+- `/refresh` — Restart all agents
+- `/'agent_name'` — Call specific agent
+- Route messages to correct agent
+- Broadcast events to all agents
+### [NEW] backend/agents/agent_registry.py
+- Loads agent profiles from `data/agent_profiles.json`
+- Instantiates all 15 agents
+- Manages agent state per user
+- Provides agent listing API
+### Agent Interaction via WebSocket
+```
+Client                    Server
+  │                         │
+  ├── /arise ──────────────►│ Activate all agents
+  │                         │ 
+  │◄── PHANTOM: "I am...   │ Each agent sends intro
+  │◄── CIPHER-MIND: "I..   │ via WebSocket
+  │◄── SHADOW-SCAN: "..."  │
+  │   ...                   │
+  │                         │
+  ├── /'shadow-scan' ──────►│ Call specific agent
+  │◄── SHADOW-SCAN intro   │
+  │                         │
+  ├── "scan 192.168.1.0" ──►│ Agent processes command
+  │◄── Scanning results... │
+```
+### Agent Memory System
+Each agent maintains per-user memory:
+- **User condition**: What the user knows, their current level
+- **Past interactions**: Previous tasks, conversations
+- **Preferences**: How the user likes to learn
+- **Goals**: What the user wants to achieve
+- Stored in SQLite `agent_memory` table, loaded on agent activation
+---
+## PART 5 — 🛡️ Security Modules (Live Dashboard Tools)
+Each module has a dedicated UI panel with live visualization.
+### Module List & UI
+#### 1. Network Scanner (SHADOW-SCAN Module)
+- Input: IP range, scan type (quick/deep/stealth)
+- UI: Live host discovery map, port table, service detection
+- AI Analysis: Risk assessment, vulnerability highlights
+- Graph: Network topology visualization
+#### 2. Payload Generator (GHOST-PAYLOAD Module)
+- Input: Target OS, payload type, evasion level
+- UI: Code editor with syntax highlighting, build output
+- Educational: Explains each payload component
+- Export: Download generated scripts
+#### 3. AI Fuzzing Engine (VOID-FUZZER Module)
+- Input: Target URL/binary, fuzz type
+- UI: Live mutation display, crash detection feed
+- Graph: Coverage heatmap, crash timeline
+#### 4. Traffic Analyzer (NEURAL-HAWK Module)
+- Input: Capture interface or PCAP file
+- UI: Protocol breakdown, flow visualization
+- AI: Encrypted traffic classification results
+- Graph: Real-time traffic volume chart
+#### 5. Vulnerability Chain Engine (VENOM-CHAIN Module)
+- Input: Target scope, known vulns
+- UI: Attack path graph (node-link diagram)
+- AI: Multi-hop chaining reasoning display
+- Risk score for each chain
+#### 6. Adaptive Evasion Simulator (APEX-STORM Module)
+- Input: Detection rules, payload
+- UI: Evasion attempt log, detection status
+- AI: Suggested modifications for evasion
+- Graph: Detection probability curve
+#### 7. Swarm Scanner (SWARM-MIND Module)
+- Input: Target range, agent count
+- UI: Agent distribution map, progress bars
+- AI: Coverage optimization display
+- Graph: Scan progress timeline
+#### 8. Digital Twin Simulator (ECHO-TWIN Module)
+- Input: Target architecture description
+- UI: Simulated environment display
+- AI: Attack rehearsal report
+- Export: Engagement report PDF
+#### 9. Quantum Readiness Assessor (QUANTUM-EYE Module)
+- Input: Target domain/service
+- UI: Cipher suite analysis, risk matrix
+- AI: Post-quantum migration recommendations
+- Graph: Vulnerability severity breakdown
+#### 10. Autonomous Recon Engine (ZERO-TRACE Module)
+- Input: Target domain (authorized)
+- UI: Progressive discovery timeline
+- AI: Intelligence fusion report
+- Graph: OSINT data relationship graph
+### Custom Tool Builder
+- Users can create new tools using a form/code editor
+- Upload Python scripts to register as custom modules
+- Custom tools appear in the module grid
+---
+## PART 6 — 🎮 Gamification Engine
+### Level System (Solo Leveling Inspired)
+#### Rank Progression
+|
+ Level Range 
+|
+ Rank 
+|
+ Color 
+|
+ Theme 
+|
+|
+-------------
+|
+------
+|
+-------
+|
+-------
+|
+|
+ 1–5 
+|
+ 🟤 Shadow Initiate 
+|
+ Gray 
+|
+ Just awakened 
+|
+|
+ 6–15 
+|
+ 🟢 Cyber Scout 
+|
+ Green 
+|
+ Learning basics 
+|
+|
+ 16–30 
+|
+ 🔵 Data Hunter 
+|
+ Blue 
+|
+ Building skills 
+|
+|
+ 31–50 
+|
+ 🟣 Code Assassin 
+|
+ Purple 
+|
+ Intermediate 
+|
+|
+ 51–70 
+|
+ 🔴 System Breaker 
+|
+ Red 
+|
+ Advanced 
+|
+|
+ 71–85 
+|
+ 🟠 Ghost Operative 
+|
+ Orange 
+|
+ Expert 
+|
+|
+ 86–95 
+|
+ ⚪ Phantom Elite 
+|
+ White/Silver 
+|
+ Master 
+|
+|
+ 96–100 
+|
+ 👑 Shadow Monarch 
+|
+ Gold/Rainbow 
+|
+ Grandmaster 
+|
+#### XP Sources
+|
+ Action 
+|
+ XP Earned 
+|
+|
+--------
+|
+-----------
+|
+|
+ Complete Python daily task 
+|
+ 50–200 (by difficulty) 
+|
+|
+ Complete Kali tool task 
+|
+ 50–200 
+|
+|
+ Complete AI usage task 
+|
+ 50–200 
+|
+|
+ Complete industry skill task 
+|
+ 75–250 
+|
+|
+ Submit correct code 
+|
+ +25–100 bonus 
+|
+|
+ Daily login streak (3+) 
+|
+ +15/day 
+|
+|
+ Random event completion 
+|
+ 100–500 
+|
+|
+ Agent interaction (meaningful) 
+|
+ 10/interaction 
+|
+|
+ News read & quiz 
+|
+ 20/article 
+|
+#### 100 Unique Powers (Unlocked on Level Up)
+Powers are special abilities/perks that enhance the dashboard experience. Examples:
+|
+#
+|
+ Power Name 
+|
+ Level 
+|
+ Effect 
+|
+|
+---
+|
+-----------
+|
+-------
+|
+--------
+|
+|
+ 1 
+|
+**
+Shadow Sight
+**
+|
+ 2 
+|
+ Unlock dark terminal theme 
+|
+|
+ 2 
+|
+**
+Echo Memory
+**
+|
+ 3 
+|
+ Agent remembers 2x more context 
+|
+|
+ 3 
+|
+**
+Binary Whisper
+**
+|
+ 4 
+|
+ Code hints in Python tasks 
+|
+|
+ 4 
+|
+**
+Ghost Ping
+**
+|
+ 5 
+|
+ Network scan speed +20% 
+|
+|
+ 5 
+|
+**
+Data Leech
+**
+|
+ 7 
+|
+ Auto-save all agent conversations 
+|
+|
+ 6 
+|
+**
+Neon Aura
+**
+|
+ 10 
+|
+ Unlock custom dashboard color themes 
+|
+|
+ 7 
+|
+**
+Dual Cast
+**
+|
+ 12 
+|
+ Run 2 agents simultaneously 
+|
+|
+ 8 
+|
+**
+Void Walker
+**
+|
+ 15 
+|
+ Access advanced Kali tool guides 
+|
+|
+ 9 
+|
+**
+Cipher Eye
+**
+|
+ 18 
+|
+ Crypto challenge bonus XP 
+|
+|
+ 10 
+|
+**
+Neural Link
+**
+|
+ 20 
+|
+ Agent personality customization 
+|
+|
+ 11 
+|
+**
+Time Freeze
+**
+|
+ 22 
+|
+ Extend daily task deadlines 
+|
+|
+ 12 
+|
+**
+Shadow Clone
+**
+|
+ 25 
+|
+ Duplicate a task for extra practice 
+|
+|
+ 13 
+|
+**
+Electric Storm
+**
+|
+ 28 
+|
+ Premium UI particle effects 
+|
+|
+ 14 
+|
+**
+Iron Code
+**
+|
+ 30 
+|
+ Code submission gives detailed feedback 
+|
+|
+ 15 
+|
+**
+Mind Read
+**
+|
+ 32 
+|
+ AI predicts your next question 
+|
+|
+ 16 
+|
+**
+Stealth Mode
+**
+|
+ 35 
+|
+ Minimal UI mode for focus 
+|
+|
+ 17 
+|
+**
+Quantum Leap
+**
+|
+ 38 
+|
+ Skip one task level requirement 
+|
+|
+ 18 
+|
+**
+Dragon Eye
+**
+|
+ 40 
+|
+ Advanced vulnerability scanner access 
+|
+|
+ 19 
+|
+**
+Shadow Army
+**
+|
+ 42 
+|
+ Run 4 agents simultaneously 
+|
+|
+ 20 
+|
+**
+Omega Compile
+**
+|
+ 45 
+|
+ Auto-format submitted code 
+|
+|
+ 21–100 
+|
+*
+(78 more unique powers)
+*
+|
+ 2–100 
+|
+*
+(Defined in powers.json)
+*
+|
+> Full list of 100 powers will be defined in `data/powers.json` with names, descriptions, effects, icons, and level requirements.
+### Random Events System
+Random events trigger on certain days to provide surprise challenges:
+|
+ Event Type 
+|
+ Description 
+|
+ Reward 
+|
+|
+-----------
+|
+-------------
+|
+--------
+|
+|
+ 🔴 
+**
+Boss Challenge
+**
+|
+ Extra-hard coding/hacking task 
+|
+ 3x XP + Rare Power 
+|
+|
+ 🟡 
+**
+Double XP Day
+**
+|
+ All tasks give 2x XP 
+|
+ — 
+|
+|
+ 🟣 
+**
+Agent Uprising
+**
+|
+ A rogue agent gives a secret quest 
+|
+ Unique badge 
+|
+|
+ 🔵 
+**
+Speed Run
+**
+|
+ Complete 3 tasks in 1 hour 
+|
+ 500 bonus XP 
+|
+|
+ 🟢 
+**
+Mentor Mode
+**
+|
+ AGNES gives a master-class session 
+|
+ Unlock next tool guide 
+|
+|
+ ⚡ 
+**
+System Glitch
+**
+|
+ UI changes to "corrupted" mode — solve to fix 
+|
+ 200 XP + effect 
+|
+|
+ 🌐 
+**
+Global Event
+**
+|
+ News-based challenge from today's headlines 
+|
+ 300 XP 
+|
+|
+ 💀 
+**
+Shadow Trial
+**
+|
+ Multi-step challenge across all skill tracks 
+|
+ Level up guaranteed 
+|
+|
+ 🎁 
+**
+Mystery Box
+**
+|
+ Random power unlock 
+|
+ Random power 
+|
+|
+ 🔥 
+**
+Streak Bonus
+**
+|
+ 7-day login streak celebration 
+|
+ Rare cosmetic 
+|
+---
+## PART 7 — 📋 Task & Content System
+### Daily Task Categories
+#### 1. Python Programming Tasks (*Function 1*)
+- Difficulty levels: Beginner → Intermediate → Advanced → Expert → Master
+- Auto-scaled to user's Python level
+- Each task includes:
+  - 📝 Full problem statement (attractive, real-world, unique — *M quality)
+  - 🏷️ Difficulty badge
+  - 🎯 "What you'll learn" section
+  - 💡 "Skills gained" tags
+  - 📤 Code submission editor (Monaco editor)
+  - ✅ AI grading with score (0–100)
+  - 📊 Feedback: what's good, what to improve
+  - 📋 Upgrade list: completed skills, next skills, learning path
+#### 2. Kali Linux Tool Tasks (*Function 2*)
+- Step-by-step guides (written for absolute beginners — "like a child")
+- Each step has:
+  - Screenshot-style descriptions
+  - Exact commands to type
+  - Expected output explanation
+  - "Why this matters" context
+  - Common errors & fixes
+#### 3. AI Usage & Tricks Tasks (*Function 3*)
+- Unique, non-repetitive AI usage scenarios
+- Novel prompting techniques
+- AI tool combinations
+- Creative AI applications
+- Each with hands-on exercise
+#### 4. NEW SKILL UPGRADER Tasks (*Function 4*)
+- Industry-current skills (DevOps, Cloud, Blockchain, IoT, etc.)
+- Tracks current industry trends
+- Career-relevant learning paths
+- Certifications guidance
+### Code Submission System
+```
+┌──────────────────────────────────────────────┐
+│  📝 Python Challenge: "Stealth Port Scanner" │
+│  Difficulty: ⭐⭐⭐ Intermediate              │
+│  XP: 150 | Skills: networking, sockets       │
+├──────────────────────────────────────────────┤
+│  [Monaco Code Editor]                         │
+│  ┌──────────────────────────────────────┐    │
+│  │ def stealth_scan(target, ports):     │    │
+│  │     # Your code here...              │    │
+│  │                                      │    │
+│  └──────────────────────────────────────┘    │
+│                                              │
+│  [▶ Submit Code]  [💾 Save Draft]            │
+├──────────────────────────────────────────────┤
+│  📊 Score: 85/100                            │
+│  ✅ Correct logic                             │
+│  ⚠️ Could improve: error handling            │
+│  🎯 Skills Learned: socket programming       │
+│  ⬆️ Next: Advanced port scanning techniques  │
+└──────────────────────────────────────────────┘
+```
+### News System
+- **Hacking News**: Fetched from The Hacker News RSS, BleepingComputer, KrebsOnSecurity
+- **AI News**: Fetched from AI-focused RSS feeds, tech blogs
+- Each article displayed in a card with:
+  - Title, source, date
+  - AI-generated summary
+  - "Read More" link
+  - Related daily task suggestion
+---
+## PART 8 — 🚀 Deployment & Polish
+### Online Deployment Plan
+#### Option A: VPS Deployment (Recommended)
+```
+┌─────────────────────────────────────────┐
+│  Your VPS (DigitalOcean/Linode/etc.)    │
+│                                         │
+│  ┌───────────────┐  ┌──────────────┐   │
+│  │    Nginx      │  │   Certbot    │   │
+│  │  (reverse     │  │  (SSL/TLS)   │   │
+│  │   proxy)      │  │              │   │
+│  └───────┬───────┘  └──────────────┘   │
+│          │                              │
+│  ┌───────┴───────┐                     │
+│  │   Uvicorn     │                     │
+│  │  (FastAPI)    │                     │
+│  │   Port 8000   │                     │
+│  └───────────────┘                     │
+│                                         │
+│  Firewall: Only 443 (HTTPS) open       │
+│  Auth: Username/Password required       │
+│  Private: No public discovery           │
+└─────────────────────────────────────────┘
+```
+#### Option B: Local + Cloudflare Tunnel
+- Run on your machine (Windows/Kali)
+- Expose via Cloudflare Tunnel (free, private)
+- Access from anywhere via custom domain
+### Offline Mode
+When internet is disconnected:
+- **Works Offline**: Code editor, task review, saved conversations, local tools, progress tracking
+- **Needs Online**: AI agents (need API), news feeds, live scanning, agent chat
+- UI shows clear online/offline indicator
+- Agents show "⚫ Offline" status badge
+- Queued messages sent when reconnected
+### Export System
+Supported export formats:
+- 📄 **PDF** — Agent reports, task results, progress report
+- 📊 **Excel** — Statistics, task history, XP breakdown
+- 📝 **Markdown** — Conversation logs, guides, notes
+- 📋 **JSON** — Raw data export, agent memory
+- 🗂️ **ZIP** — Full project export (all data)
+### Settings Page Features
+- 🔑 API Key management (OpenAI, Gemini, custom endpoints)
+- 🎨 Theme customization (color accents, particle density)
+- 🔔 Notification preferences
+- 📊 Data management (import/export/reset)
+- 👤 Profile settings
+- 🌐 Connection status & diagnostics
+---
+## Terminal Commands Reference
+|
+ Command 
+|
+ Action 
+|
+ Effect 
+|
+|
+---------
+|
+--------
+|
+--------
+|
+|
+`/arise`
+|
+ Activate all agents 
+|
+ All agents wake up, introduce themselves sequentially 
+|
+|
+`/rest`
+|
+ Deactivate all agents 
+|
+ All agents go dormant with farewell messages 
+|
+|
+`/refresh`
+|
+ Restart all agents 
+|
+ Agents restart with fresh state 
+|
+|
+`/logout`
+|
+ Exit to login page 
+|
+ Saves state, returns to login 
+|
+|
+`/'agent-name'`
+|
+ Call specific agent 
+|
+ Agent activates and introduces itself 
+|
+|
+`/status`
+|
+ System status 
+|
+ Shows all agent states, online/offline, XP 
+|
+|
+`/help`
+|
+ Command list 
+|
+ Lists all available commands 
+|
+|
+`/stats`
+|
+ Quick stats 
+|
+ Shows level, XP, streak, rank 
+|
+|
+`/power`
+|
+ List powers 
+|
+ Shows unlocked powers 
+|
+|
+`/daily`
+|
+ Today's tasks 
+|
+ Shows pending daily tasks 
+|
+---
+## Verification Plan
+### Automated Tests
+```bash
+# Run backend tests
+cd dark-x
+python -m pytest backend/tests/ -v
+# Test API endpoints
+python -m pytest backend/tests/test_auth.py -v
+python -m pytest backend/tests/test_agents.py -v
+python -m pytest backend/tests/test_tasks.py -v
+```
+### Manual Verification
+1. **Auth Flow**: Register → Login → Dashboard → Logout → Login again
+2. **Terminal Commands**: Test all `/` commands
+3. **Agent Activation**: `/arise` → verify all 15 agents respond
+4. **Task Submission**: Submit Python code → verify scoring works
+5. **Level Up**: Complete enough tasks to trigger level-up animation
+6. **Offline Mode**: Disconnect internet → verify offline indicators appear
+7. **Export**: Export a report as PDF and verify it downloads
+8. **Settings**: Add API key → verify agents use it
+9. **Responsive**: Test on different screen sizes
+10. **Performance**: Verify dashboard loads under 3 seconds
+---
+## Execution Order
+```mermaid
+gantt
+    title DARK-X Build Timeline
+    dateFormat  YYYY-MM-DD
+    section Part 1
+    Core Backend & Setup     :p1, 2026-06-10, 1d
+    section Part 2
+    Auth & Database          :p2, after p1, 1d
+    section Part 3
+    Dashboard UI             :p3, after p2, 2d
+    section Part 4
+    AI Agent System          :p4, after p3, 2d
+    section Part 5
+    Security Modules         :p5, after p4, 1d
+    section Part 6
+    Gamification Engine      :p6, after p5, 1d
+    section Part 7
+    Task & Content System    :p7, after p6, 1d
+    section Part 8
+    Deployment & Polish      :p8, after p7, 1d
+```
+---
+> [!TIP]
+> I recommend starting with **Parts 1–3** first to get a working login + dashboard, then adding agents and features incrementally. Each part is designed to be functional on its own, so you'll see progress at every stage.
+---
+*DARK-X v1.0 — "From Zero to Shadow Monarch. The system has chosen you."* 🕶️⚡

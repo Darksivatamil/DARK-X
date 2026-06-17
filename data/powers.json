@@ -1,0 +1,802 @@
+[
+  {
+    "id": "power_1",
+    "name": "Shadow Sight",
+    "level": 2,
+    "description": "Unlock dark terminal theme",
+    "effect": "ui_theme_dark",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_2",
+    "name": "Echo Memory",
+    "level": 3,
+    "description": "Agent remembers 2x more context",
+    "effect": "agent_memory_boost",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_3",
+    "name": "Binary Whisper",
+    "level": 4,
+    "description": "Code hints in Python tasks",
+    "effect": "task_hints",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_4",
+    "name": "Ghost Ping",
+    "level": 5,
+    "description": "Network scan speed +20%",
+    "effect": "scan_speed",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_5",
+    "name": "Data Leech",
+    "level": 7,
+    "description": "Auto-save all agent conversations",
+    "effect": "auto_save",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_6",
+    "name": "Neon Aura",
+    "level": 10,
+    "description": "Unlock custom dashboard color themes",
+    "effect": "custom_themes",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_7",
+    "name": "Dual Cast",
+    "level": 12,
+    "description": "Run 2 agents simultaneously",
+    "effect": "multi_agent_2",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_8",
+    "name": "Void Walker",
+    "level": 15,
+    "description": "Access advanced Kali tool guides",
+    "effect": "kali_advanced",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_9",
+    "name": "Cipher Eye",
+    "level": 18,
+    "description": "Crypto challenge bonus XP",
+    "effect": "crypto_bonus",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_10",
+    "name": "Neural Link",
+    "level": 20,
+    "description": "Agent personality customization",
+    "effect": "personality_edit",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_11",
+    "name": "Time Freeze",
+    "level": 22,
+    "description": "Extend daily task deadlines",
+    "effect": "extend_deadline",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_12",
+    "name": "Shadow Clone",
+    "level": 25,
+    "description": "Duplicate a task for extra practice",
+    "effect": "task_clone",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_13",
+    "name": "Electric Storm",
+    "level": 28,
+    "description": "Premium UI particle effects",
+    "effect": "particle_effects",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_14",
+    "name": "Iron Code",
+    "level": 30,
+    "description": "Code submission gives detailed feedback",
+    "effect": "detailed_feedback",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_15",
+    "name": "Mind Read",
+    "level": 32,
+    "description": "AI predicts your next question",
+    "effect": "predict_question",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_16",
+    "name": "Stealth Mode",
+    "level": 35,
+    "description": "Minimal UI mode for focus",
+    "effect": "minimal_ui",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_17",
+    "name": "Quantum Leap",
+    "level": 38,
+    "description": "Skip one task level requirement",
+    "effect": "skip_level",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_18",
+    "name": "Dragon Eye",
+    "level": 40,
+    "description": "Advanced vulnerability scanner access",
+    "effect": "vuln_scanner",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_19",
+    "name": "Shadow Army",
+    "level": 42,
+    "description": "Run 4 agents simultaneously",
+    "effect": "multi_agent_4",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_20",
+    "name": "Omega Compile",
+    "level": 45,
+    "description": "Auto-format submitted code",
+    "effect": "auto_format",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_21",
+    "name": "Dark Sight",
+    "level": 48,
+    "description": "See hidden system metrics",
+    "effect": "hidden_metrics",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_22",
+    "name": "Phantom Step",
+    "level": 50,
+    "description": "Bypass network rate limits",
+    "effect": "rate_limit_bypass",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_23",
+    "name": "Venom Strike",
+    "level": 52,
+    "description": "Payload generation +50% potency",
+    "effect": "payload_potency",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_24",
+    "name": "Arcane Shield",
+    "level": 55,
+    "description": "Anti-detection for scanning",
+    "effect": "anti_detection",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_25",
+    "name": "Net Surge",
+    "level": 57,
+    "description": "Download speed boost for tools",
+    "effect": "download_boost",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_26",
+    "name": "Crystal Wall",
+    "level": 60,
+    "description": "Defense analysis automation",
+    "effect": "defense_auto",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_27",
+    "name": "Storm Call",
+    "level": 62,
+    "description": "Distributed scan coverage",
+    "effect": "distributed_scan",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_28",
+    "name": "Blade Dance",
+    "level": 65,
+    "description": "Rapid exploit sequencing",
+    "effect": "rapid_exploit",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_29",
+    "name": "Soul Harvest",
+    "level": 68,
+    "description": "Auto-collect intel from scans",
+    "effect": "auto_intel",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_30",
+    "name": "Void Gate",
+    "level": 70,
+    "description": "Access hidden training modules",
+    "effect": "hidden_training",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_31",
+    "name": "Thunder Clap",
+    "level": 72,
+    "description": "Multi-threaded task execution",
+    "effect": "multi_thread",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_32",
+    "name": "Mirage Walk",
+    "level": 75,
+    "description": "Deceptive traffic generation",
+    "effect": "deceptive_traffic",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_33",
+    "name": "Bone Spear",
+    "level": 77,
+    "description": "Precision exploit targeting",
+    "effect": "precision_exploit",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_34",
+    "name": "Shadow Step",
+    "level": 80,
+    "description": "Instant task completion (1/day)",
+    "effect": "instant_complete",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_35",
+    "name": "Plasma Bolt",
+    "level": 82,
+    "description": "High-speed port scanning",
+    "effect": "fast_scan",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_36",
+    "name": "Iron Will",
+    "level": 85,
+    "description": "Resist XP penalties",
+    "effect": "xp_resist",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_37",
+    "name": "Frost Nova",
+    "level": 87,
+    "description": "Freeze ongoing scans for analysis",
+    "effect": "freeze_scan",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_38",
+    "name": "Inferno Blast",
+    "level": 90,
+    "description": "Ultimate brute force engine",
+    "effect": "ultimate_brute",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_39",
+    "name": "Chain Lightning",
+    "level": 92,
+    "description": "Cascade exploits across targets",
+    "effect": "cascade_exploit",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_40",
+    "name": "Time Distortion",
+    "level": 95,
+    "description": "Double XP for 1 hour",
+    "effect": "double_xp_hour",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_41",
+    "name": "Gravity Well",
+    "level": 97,
+    "description": "Pull all logs into central view",
+    "effect": "log_central",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_42",
+    "name": "Astral Projection",
+    "level": 100,
+    "description": "Remote agent deployment",
+    "effect": "remote_deploy",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "power_43",
+    "name": "Shadow Strike",
+    "level": 43,
+    "description": "Unlocks at level 43",
+    "effect": "generic",
+    "icon": "\ud83d\udd25"
+  },
+  {
+    "id": "power_44",
+    "name": "Dark Guard",
+    "level": 44,
+    "description": "Unlocks at level 44",
+    "effect": "generic",
+    "icon": "\ud83d\udc80"
+  },
+  {
+    "id": "power_45",
+    "name": "Void Pulse",
+    "level": 45,
+    "description": "Unlocks at level 45",
+    "effect": "generic",
+    "icon": "\ud83d\udc7b"
+  },
+  {
+    "id": "power_46",
+    "name": "Nether Wave",
+    "level": 46,
+    "description": "Unlocks at level 46",
+    "effect": "generic",
+    "icon": "\ud83c\udfaf"
+  },
+  {
+    "id": "power_47",
+    "name": "Phantom Shield",
+    "level": 47,
+    "description": "Unlocks at level 47",
+    "effect": "generic",
+    "icon": "\ud83d\udee1\ufe0f"
+  },
+  {
+    "id": "power_48",
+    "name": "Crimson Blade",
+    "level": 48,
+    "description": "Unlocks at level 48",
+    "effect": "generic",
+    "icon": "\u2694\ufe0f"
+  },
+  {
+    "id": "power_49",
+    "name": "Obsidian Fang",
+    "level": 49,
+    "description": "Unlocks at level 49",
+    "effect": "generic",
+    "icon": "\ud83c\udf00"
+  },
+  {
+    "id": "power_50",
+    "name": "Abyss Aura",
+    "level": 50,
+    "description": "Unlocks at level 50",
+    "effect": "generic",
+    "icon": "\ud83d\udc8e"
+  },
+  {
+    "id": "power_51",
+    "name": "Eclipse Ward",
+    "level": 51,
+    "description": "Unlocks at level 51",
+    "effect": "generic",
+    "icon": "\ud83d\udd2e"
+  },
+  {
+    "id": "power_52",
+    "name": "Dusk Step",
+    "level": 52,
+    "description": "Unlocks at level 52",
+    "effect": "generic",
+    "icon": "\ud83c\udf0a"
+  },
+  {
+    "id": "power_53",
+    "name": "Storm Call",
+    "level": 53,
+    "description": "Unlocks at level 53",
+    "effect": "generic",
+    "icon": "\ud83d\udd25"
+  },
+  {
+    "id": "power_54",
+    "name": "Frost Burst",
+    "level": 54,
+    "description": "Unlocks at level 54",
+    "effect": "generic",
+    "icon": "\ud83d\udc80"
+  },
+  {
+    "id": "power_55",
+    "name": "Inferno Wall",
+    "level": 55,
+    "description": "Unlocks at level 55",
+    "effect": "generic",
+    "icon": "\ud83d\udc7b"
+  },
+  {
+    "id": "power_56",
+    "name": "Thunder Field",
+    "level": 56,
+    "description": "Unlocks at level 56",
+    "effect": "generic",
+    "icon": "\ud83c\udfaf"
+  },
+  {
+    "id": "power_57",
+    "name": "Iron Armor",
+    "level": 57,
+    "description": "Unlocks at level 57",
+    "effect": "generic",
+    "icon": "\ud83d\udee1\ufe0f"
+  },
+  {
+    "id": "power_58",
+    "name": "Crystal Dance",
+    "level": 58,
+    "description": "Unlocks at level 58",
+    "effect": "generic",
+    "icon": "\u2694\ufe0f"
+  },
+  {
+    "id": "power_59",
+    "name": "Venom Harvest",
+    "level": 59,
+    "description": "Unlocks at level 59",
+    "effect": "generic",
+    "icon": "\ud83c\udf00"
+  },
+  {
+    "id": "power_60",
+    "name": "Arcane Gate",
+    "level": 60,
+    "description": "Unlocks at level 60",
+    "effect": "generic",
+    "icon": "\ud83d\udc8e"
+  },
+  {
+    "id": "power_61",
+    "name": "Soul Reach",
+    "level": 61,
+    "description": "Unlocks at level 61",
+    "effect": "generic",
+    "icon": "\ud83d\udd2e"
+  },
+  {
+    "id": "power_62",
+    "name": "Omega Lord",
+    "level": 62,
+    "description": "Unlocks at level 62",
+    "effect": "generic",
+    "icon": "\ud83c\udf0a"
+  },
+  {
+    "id": "power_63",
+    "name": "Shadow Strike",
+    "level": 63,
+    "description": "Unlocks at level 63",
+    "effect": "generic",
+    "icon": "\ud83d\udd25"
+  },
+  {
+    "id": "power_64",
+    "name": "Dark Guard",
+    "level": 64,
+    "description": "Unlocks at level 64",
+    "effect": "generic",
+    "icon": "\ud83d\udc80"
+  },
+  {
+    "id": "power_65",
+    "name": "Void Pulse",
+    "level": 65,
+    "description": "Unlocks at level 65",
+    "effect": "generic",
+    "icon": "\ud83d\udc7b"
+  },
+  {
+    "id": "power_66",
+    "name": "Nether Wave",
+    "level": 66,
+    "description": "Unlocks at level 66",
+    "effect": "generic",
+    "icon": "\ud83c\udfaf"
+  },
+  {
+    "id": "power_67",
+    "name": "Phantom Shield",
+    "level": 67,
+    "description": "Unlocks at level 67",
+    "effect": "generic",
+    "icon": "\ud83d\udee1\ufe0f"
+  },
+  {
+    "id": "power_68",
+    "name": "Crimson Blade",
+    "level": 68,
+    "description": "Unlocks at level 68",
+    "effect": "generic",
+    "icon": "\u2694\ufe0f"
+  },
+  {
+    "id": "power_69",
+    "name": "Obsidian Fang",
+    "level": 69,
+    "description": "Unlocks at level 69",
+    "effect": "generic",
+    "icon": "\ud83c\udf00"
+  },
+  {
+    "id": "power_70",
+    "name": "Abyss Aura",
+    "level": 70,
+    "description": "Unlocks at level 70",
+    "effect": "generic",
+    "icon": "\ud83d\udc8e"
+  },
+  {
+    "id": "power_71",
+    "name": "Eclipse Ward",
+    "level": 71,
+    "description": "Unlocks at level 71",
+    "effect": "generic",
+    "icon": "\ud83d\udd2e"
+  },
+  {
+    "id": "power_72",
+    "name": "Dusk Step",
+    "level": 72,
+    "description": "Unlocks at level 72",
+    "effect": "generic",
+    "icon": "\ud83c\udf0a"
+  },
+  {
+    "id": "power_73",
+    "name": "Storm Call",
+    "level": 73,
+    "description": "Unlocks at level 73",
+    "effect": "generic",
+    "icon": "\ud83d\udd25"
+  },
+  {
+    "id": "power_74",
+    "name": "Frost Burst",
+    "level": 74,
+    "description": "Unlocks at level 74",
+    "effect": "generic",
+    "icon": "\ud83d\udc80"
+  },
+  {
+    "id": "power_75",
+    "name": "Inferno Wall",
+    "level": 75,
+    "description": "Unlocks at level 75",
+    "effect": "generic",
+    "icon": "\ud83d\udc7b"
+  },
+  {
+    "id": "power_76",
+    "name": "Thunder Field",
+    "level": 76,
+    "description": "Unlocks at level 76",
+    "effect": "generic",
+    "icon": "\ud83c\udfaf"
+  },
+  {
+    "id": "power_77",
+    "name": "Iron Armor",
+    "level": 77,
+    "description": "Unlocks at level 77",
+    "effect": "generic",
+    "icon": "\ud83d\udee1\ufe0f"
+  },
+  {
+    "id": "power_78",
+    "name": "Crystal Dance",
+    "level": 78,
+    "description": "Unlocks at level 78",
+    "effect": "generic",
+    "icon": "\u2694\ufe0f"
+  },
+  {
+    "id": "power_79",
+    "name": "Venom Harvest",
+    "level": 79,
+    "description": "Unlocks at level 79",
+    "effect": "generic",
+    "icon": "\ud83c\udf00"
+  },
+  {
+    "id": "power_80",
+    "name": "Arcane Gate",
+    "level": 80,
+    "description": "Unlocks at level 80",
+    "effect": "generic",
+    "icon": "\ud83d\udc8e"
+  },
+  {
+    "id": "power_81",
+    "name": "Soul Reach",
+    "level": 81,
+    "description": "Unlocks at level 81",
+    "effect": "generic",
+    "icon": "\ud83d\udd2e"
+  },
+  {
+    "id": "power_82",
+    "name": "Omega Lord",
+    "level": 82,
+    "description": "Unlocks at level 82",
+    "effect": "generic",
+    "icon": "\ud83c\udf0a"
+  },
+  {
+    "id": "power_83",
+    "name": "Shadow Strike",
+    "level": 83,
+    "description": "Unlocks at level 83",
+    "effect": "generic",
+    "icon": "\ud83d\udd25"
+  },
+  {
+    "id": "power_84",
+    "name": "Dark Guard",
+    "level": 84,
+    "description": "Unlocks at level 84",
+    "effect": "generic",
+    "icon": "\ud83d\udc80"
+  },
+  {
+    "id": "power_85",
+    "name": "Void Pulse",
+    "level": 85,
+    "description": "Unlocks at level 85",
+    "effect": "generic",
+    "icon": "\ud83d\udc7b"
+  },
+  {
+    "id": "power_86",
+    "name": "Nether Wave",
+    "level": 86,
+    "description": "Unlocks at level 86",
+    "effect": "generic",
+    "icon": "\ud83c\udfaf"
+  },
+  {
+    "id": "power_87",
+    "name": "Phantom Shield",
+    "level": 87,
+    "description": "Unlocks at level 87",
+    "effect": "generic",
+    "icon": "\ud83d\udee1\ufe0f"
+  },
+  {
+    "id": "power_88",
+    "name": "Crimson Blade",
+    "level": 88,
+    "description": "Unlocks at level 88",
+    "effect": "generic",
+    "icon": "\u2694\ufe0f"
+  },
+  {
+    "id": "power_89",
+    "name": "Obsidian Fang",
+    "level": 89,
+    "description": "Unlocks at level 89",
+    "effect": "generic",
+    "icon": "\ud83c\udf00"
+  },
+  {
+    "id": "power_90",
+    "name": "Abyss Aura",
+    "level": 90,
+    "description": "Unlocks at level 90",
+    "effect": "generic",
+    "icon": "\ud83d\udc8e"
+  },
+  {
+    "id": "power_91",
+    "name": "Eclipse Ward",
+    "level": 91,
+    "description": "Unlocks at level 91",
+    "effect": "generic",
+    "icon": "\ud83d\udd2e"
+  },
+  {
+    "id": "power_92",
+    "name": "Dusk Step",
+    "level": 92,
+    "description": "Unlocks at level 92",
+    "effect": "generic",
+    "icon": "\ud83c\udf0a"
+  },
+  {
+    "id": "power_93",
+    "name": "Storm Call",
+    "level": 93,
+    "description": "Unlocks at level 93",
+    "effect": "generic",
+    "icon": "\ud83d\udd25"
+  },
+  {
+    "id": "power_94",
+    "name": "Frost Burst",
+    "level": 94,
+    "description": "Unlocks at level 94",
+    "effect": "generic",
+    "icon": "\ud83d\udc80"
+  },
+  {
+    "id": "power_95",
+    "name": "Inferno Wall",
+    "level": 95,
+    "description": "Unlocks at level 95",
+    "effect": "generic",
+    "icon": "\ud83d\udc7b"
+  },
+  {
+    "id": "power_96",
+    "name": "Thunder Field",
+    "level": 96,
+    "description": "Unlocks at level 96",
+    "effect": "generic",
+    "icon": "\ud83c\udfaf"
+  },
+  {
+    "id": "power_97",
+    "name": "Iron Armor",
+    "level": 97,
+    "description": "Unlocks at level 97",
+    "effect": "generic",
+    "icon": "\ud83d\udee1\ufe0f"
+  },
+  {
+    "id": "power_98",
+    "name": "Crystal Dance",
+    "level": 98,
+    "description": "Unlocks at level 98",
+    "effect": "generic",
+    "icon": "\u2694\ufe0f"
+  },
+  {
+    "id": "power_99",
+    "name": "Venom Harvest",
+    "level": 99,
+    "description": "Unlocks at level 99",
+    "effect": "generic",
+    "icon": "\ud83c\udf00"
+  },
+  {
+    "id": "power_100",
+    "name": "Arcane Gate",
+    "level": 100,
+    "description": "Unlocks at level 100",
+    "effect": "generic",
+    "icon": "\ud83d\udc8e"
+  }
+]

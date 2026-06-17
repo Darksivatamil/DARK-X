@@ -1,0 +1,65 @@
+[
+  {
+    "type": "boss_challenge",
+    "name": "The Void Sentinel",
+    "description": "A high-difficulty encryption challenge appears. Solve it to earn massive rewards.",
+    "reward_xp": 500,
+    "reward_power": "power_10"
+  },
+  {
+    "type": "double_xp",
+    "name": "Convergence Day",
+    "description": "All tasks give 2x XP for the next 24 hours.",
+    "reward_xp": 0
+  },
+  {
+    "type": "agent_uprising",
+    "name": "Agent Rebellion",
+    "description": "A rogue agent challenges you with a secret quest. Complete it for a unique badge.",
+    "reward_xp": 300,
+    "reward_power": "power_15"
+  },
+  {
+    "type": "speed_run",
+    "name": "Speed Trial",
+    "description": "Complete 3 tasks in under 1 hour for a massive XP bonus.",
+    "reward_xp": 500
+  },
+  {
+    "type": "mentor_mode",
+    "name": "Master Class",
+    "description": "AGNES gives a master-class session on advanced tool usage.",
+    "reward_xp": 250
+  },
+  {
+    "type": "system_glitch",
+    "name": "System Corruption",
+    "description": "The UI glitches into corrupted mode. Solve the puzzle to restore order.",
+    "reward_xp": 200
+  },
+  {
+    "type": "global_event",
+    "name": "Zero-Day Alert",
+    "description": "A critical vulnerability is announced in the news. Analyze and respond.",
+    "reward_xp": 300
+  },
+  {
+    "type": "shadow_trial",
+    "name": "Shadow Trial",
+    "description": "A multi-step challenge across all skill tracks. Complete to guarantee a level up.",
+    "reward_xp": 1000,
+    "reward_power": "power_30"
+  },
+  {
+    "type": "mystery_box",
+    "name": "Mystery Cache",
+    "description": "A mysterious data cache is discovered. Open it for a random power unlock.",
+    "reward_xp": 150
+  },
+  {
+    "type": "streak_bonus",
+    "name": "Streak Celebration",
+    "description": "7-day login streak achieved! Claim your rare cosmetic reward.",
+    "reward_xp": 350
+  }
+]
